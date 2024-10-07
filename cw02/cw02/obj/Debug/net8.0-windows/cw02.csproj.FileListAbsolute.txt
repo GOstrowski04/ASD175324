@@ -1,0 +1,16 @@
+D:\175324\cw02\cw02\bin\Debug\net8.0-windows\cw02.exe
+D:\175324\cw02\cw02\bin\Debug\net8.0-windows\cw02.deps.json
+D:\175324\cw02\cw02\bin\Debug\net8.0-windows\cw02.runtimeconfig.json
+D:\175324\cw02\cw02\bin\Debug\net8.0-windows\cw02.dll
+D:\175324\cw02\cw02\bin\Debug\net8.0-windows\cw02.pdb
+D:\175324\cw02\cw02\obj\Debug\net8.0-windows\cw02.Form1.resources
+D:\175324\cw02\cw02\obj\Debug\net8.0-windows\cw02.csproj.GenerateResource.cache
+D:\175324\cw02\cw02\obj\Debug\net8.0-windows\cw02.GeneratedMSBuildEditorConfig.editorconfig
+D:\175324\cw02\cw02\obj\Debug\net8.0-windows\cw02.AssemblyInfoInputs.cache
+D:\175324\cw02\cw02\obj\Debug\net8.0-windows\cw02.AssemblyInfo.cs
+D:\175324\cw02\cw02\obj\Debug\net8.0-windows\cw02.csproj.CoreCompileInputs.cache
+D:\175324\cw02\cw02\obj\Debug\net8.0-windows\cw02.dll
+D:\175324\cw02\cw02\obj\Debug\net8.0-windows\refint\cw02.dll
+D:\175324\cw02\cw02\obj\Debug\net8.0-windows\cw02.pdb
+D:\175324\cw02\cw02\obj\Debug\net8.0-windows\cw02.genruntimeconfig.cache
+D:\175324\cw02\cw02\obj\Debug\net8.0-windows\ref\cw02.dll

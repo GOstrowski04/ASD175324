@@ -1,0 +1,9 @@
+C:\Users\Gabriel\source\repos\175324ASD\175324ASD\bin\Debug\175324ASD.exe.config
+C:\Users\Gabriel\source\repos\175324ASD\175324ASD\bin\Debug\175324ASD.exe
+C:\Users\Gabriel\source\repos\175324ASD\175324ASD\bin\Debug\175324ASD.pdb
+C:\Users\Gabriel\source\repos\175324ASD\175324ASD\obj\Debug\175324ASD.csprojAssemblyReference.cache
+C:\Users\Gabriel\source\repos\175324ASD\175324ASD\obj\Debug\_175324ASD.Form1.resources
+C:\Users\Gabriel\source\repos\175324ASD\175324ASD\obj\Debug\_175324ASD.Properties.Resources.resources
+C:\Users\Gabriel\source\repos\175324ASD\175324ASD\obj\Debug\175324ASD.csproj.GenerateResource.cache
+C:\Users\Gabriel\source\repos\175324ASD\175324ASD\obj\Debug\175324ASD.exe
+C:\Users\Gabriel\source\repos\175324ASD\175324ASD\obj\Debug\175324ASD.pdb

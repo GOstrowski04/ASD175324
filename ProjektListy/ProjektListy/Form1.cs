@@ -17,7 +17,7 @@ namespace ProjektListy
             InitializeComponent();
         }
         List lista = new List();
-
+        BST bst = new BST();
         private void AddFirst_Click(object sender, EventArgs e)
         {
             lista.AddFirst(int.Parse(textBox2.Text));
@@ -67,6 +67,16 @@ namespace ProjektListy
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true; // Prevent non-numeric input
+            }
+        }
+
+        private void ShowTree_Click(object sender, EventArgs e)
+        {
+            int liczba;
+            if (int.TryParse(textBox5.Text, out liczba))
+            {
+                bst.Add(liczba);
+                bst.PopulateTreeView(treeView1);
             }
         }
     }

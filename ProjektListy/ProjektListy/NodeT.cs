@@ -8,10 +8,10 @@ namespace ProjektListy
 {
     public class NodeT
     {
-        NodeT rodzic;
-        NodeT lewe;
-        NodeT prawe;
-        int data;
+        public NodeT rodzic;
+        public NodeT lewe;
+        public NodeT prawe;
+        public int data;
         public NodeT(int liczba)
         {
             this.data = liczba;

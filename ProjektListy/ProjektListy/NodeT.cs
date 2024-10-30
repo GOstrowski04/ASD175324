@@ -16,5 +16,23 @@ namespace ProjektListy
         {
             this.data = liczba;
         }
+        void Connect(NodeT dziecko)
+        {
+            rodzic = this;
+            dziecko.rodzic = this;
+            if (dziecko.data < rodzic.data)
+            {
+                rodzic.lewe = dziecko;
+            }
+            else rodzic.prawe = dziecko;
+        }
+        public NodeT Min(NodeT root)
+        {
+            while (root.lewe != null)
+            {
+                root = root.lewe;
+            }
+            return root;
+        }
     }
 }

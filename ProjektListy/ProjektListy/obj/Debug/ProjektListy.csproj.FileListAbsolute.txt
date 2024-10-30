@@ -16,3 +16,13 @@ C:\ASD\ASD175324\ProjektListy\ProjektListy\obj\Debug\ProjektListy.Properties.Res
 C:\ASD\ASD175324\ProjektListy\ProjektListy\obj\Debug\ProjektListy.csproj.GenerateResource.cache
 C:\ASD\ASD175324\ProjektListy\ProjektListy\obj\Debug\ProjektListy.exe
 C:\ASD\ASD175324\ProjektListy\ProjektListy\obj\Debug\ProjektListy.pdb
+D:\175324\ASD175324\ProjektListy\ProjektListy\bin\Debug\ProjektListy.exe.config
+D:\175324\ASD175324\ProjektListy\ProjektListy\bin\Debug\ProjektListy.exe
+D:\175324\ASD175324\ProjektListy\ProjektListy\bin\Debug\ProjektListy.pdb
+D:\175324\ASD175324\ProjektListy\ProjektListy\obj\Debug\ProjektListy.csproj.AssemblyReference.cache
+D:\175324\ASD175324\ProjektListy\ProjektListy\obj\Debug\ProjektListy.Form1.resources
+D:\175324\ASD175324\ProjektListy\ProjektListy\obj\Debug\ProjektListy.Properties.Resources.resources
+D:\175324\ASD175324\ProjektListy\ProjektListy\obj\Debug\ProjektListy.csproj.GenerateResource.cache
+D:\175324\ASD175324\ProjektListy\ProjektListy\obj\Debug\ProjektListy.csproj.CoreCompileInputs.cache
+D:\175324\ASD175324\ProjektListy\ProjektListy\obj\Debug\ProjektListy.exe
+D:\175324\ASD175324\ProjektListy\ProjektListy\obj\Debug\ProjektListy.pdb

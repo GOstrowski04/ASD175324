@@ -70,6 +70,7 @@ namespace ProjektListy
             }
         }
 
+
         private void ShowTree_Click(object sender, EventArgs e)
         {
             int liczba;
@@ -78,6 +79,14 @@ namespace ProjektListy
                 bst.Add(liczba);
                 bst.PopulateTreeView(treeView1);
             }
+        }
+
+        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                {
+                    e.Handled = true;
+                }    
         }
     }
 }

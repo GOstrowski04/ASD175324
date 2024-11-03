@@ -107,5 +107,98 @@ namespace ProjektListy
             // 3 miejsce post-order wartość węzła od końca po sprawdzeniu praweje stronu wypisuje 2 1 3 4 3 9 8
 
         }
+        public string PreOrder(NodeT wezel)
+        {
+            if (wezel == null) return "";
+            return wezel.data + " " + PreOrder(wezel.lewe) + PreOrder(wezel.prawe);
+        }
+
+        public string InOrder(NodeT wezel)
+        {
+            if (wezel == null) return "";
+            return InOrder(wezel.lewe) + wezel.data + " " + InOrder(wezel.prawe);
+        }
+        public string PostOrder(NodeT wezel)
+        {
+            if (wezel == null) return "";
+            return PostOrder(wezel.lewe) + PostOrder(wezel.prawe) + wezel.data + " ";
+        }
+        private void RemoveZero(NodeT usuwany)
+        {
+            if (usuwany == root)
+                root = null;
+            else if (usuwany.data < usuwany.rodzic.data)
+            {
+                usuwany.rodzic.lewe = null;
+            }
+            else
+            {
+                usuwany.rodzic.prawe = null;
+            }
+            usuwany.rodzic = null;
+        }
+        private void RemoveOne(NodeT usuwany)
+        {
+            NodeT child = (usuwany.lewe != null) ? usuwany.lewe : usuwany.prawe;
+
+            if (usuwany == root)
+                root = child;
+            else if (usuwany.data < usuwany.rodzic.data)
+                usuwany.rodzic.lewe = child;
+            else
+                usuwany.rodzic.prawe = child;
+
+            child.rodzic = usuwany.rodzic;
+        }
+        private NodeT findNode(int n)
+        {
+            if (root != null)
+            {
+                NodeT temp = root;
+                while (temp != null)
+                {
+                    if (n == temp.data) return temp;
+                    if (n < temp.data) temp = temp.lewe;
+                    else temp = temp.prawe;
+                }
+                return temp;
+            }
+            return null;
+        }
+        public void Remove(int n)
+        {
+            NodeT usuwany = findNode(n);
+            if (usuwany != null)
+            {
+                if (usuwany.lewe == null && usuwany.prawe == null)
+                {
+                    RemoveZero(usuwany);
+                }
+                else if (usuwany.lewe != null && usuwany.prawe == null)
+                {
+                    RemoveOne(usuwany);
+                }
+                else if (usuwany.lewe == null && usuwany.prawe != null)
+                {
+                    RemoveOne(usuwany);
+                }
+                else
+                {
+                    NodeT tempRoot = usuwany.prawe;
+                    while (tempRoot.lewe != null) tempRoot = tempRoot.lewe;
+                    usuwany.data = tempRoot.data;
+                    if (tempRoot.prawe == null)
+                    {
+                        RemoveZero(tempRoot);
+                    }
+                    else
+                    {
+                        RemoveOne(tempRoot);
+                    }
+                    tempRoot = null;
+                }
+
+            }
+        }
     }
 }

@@ -88,5 +88,30 @@ namespace ProjektListy
                     e.Handled = true;
                 }    
         }
+
+        private void RemoveFromTree_Click(object sender, EventArgs e)
+        {
+            int liczba;
+            if (int.TryParse(textBox5.Text, out liczba))
+            {
+                bst.Remove(liczba);
+                bst.PopulateTreeView(treeView1);
+            }
+        }
+
+        private void PreOrder_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = bst.PreOrder(bst.root);
+        }
+
+        private void InOrder_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = bst.InOrder(bst.root);
+        }
+
+        private void PostOrder_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = bst.PostOrder(bst.root);
+        }
     }
 }

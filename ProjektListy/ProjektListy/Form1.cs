@@ -44,7 +44,7 @@ namespace ProjektListy
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '-')
             {
                 e.Handled = true; // Prevent non-numeric input
             }
@@ -64,7 +64,7 @@ namespace ProjektListy
 
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '-')
             {
                 e.Handled = true; // Prevent non-numeric input
             }
@@ -78,12 +78,13 @@ namespace ProjektListy
             {
                 bst.Add(liczba);
                 bst.PopulateTreeView(treeView1);
+                treeView1.ExpandAll();
             }
         }
 
         private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
         {
-                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '-')
                 {
                     e.Handled = true;
                 }    
@@ -96,6 +97,7 @@ namespace ProjektListy
             {
                 bst.Remove(liczba);
                 bst.PopulateTreeView(treeView1);
+                treeView1.ExpandAll();
             }
         }
 
@@ -112,6 +114,11 @@ namespace ProjektListy
         private void PostOrder_Click(object sender, EventArgs e)
         {
             textBox1.Text = bst.PostOrder(bst.root);
+        }
+
+        private void ShowList_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = lista.ToString();
         }
     }
 }

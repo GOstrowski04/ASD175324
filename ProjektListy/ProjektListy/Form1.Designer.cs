@@ -44,6 +44,11 @@
             this.PreOrder = new System.Windows.Forms.Button();
             this.InOrder = new System.Windows.Forms.Button();
             this.PostOrder = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.ShowList = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -51,12 +56,12 @@
             this.textBox1.Location = new System.Drawing.Point(39, 54);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(722, 20);
+            this.textBox1.Size = new System.Drawing.Size(1000, 20);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(422, 112);
+            this.textBox2.Location = new System.Drawing.Point(50, 31);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 1;
@@ -65,7 +70,7 @@
             // AddFirst
             // 
             this.AddFirst.CausesValidation = false;
-            this.AddFirst.Location = new System.Drawing.Point(378, 151);
+            this.AddFirst.Location = new System.Drawing.Point(6, 57);
             this.AddFirst.Name = "AddFirst";
             this.AddFirst.Size = new System.Drawing.Size(90, 39);
             this.AddFirst.TabIndex = 2;
@@ -75,7 +80,7 @@
             // 
             // AddLast
             // 
-            this.AddLast.Location = new System.Drawing.Point(474, 151);
+            this.AddLast.Location = new System.Drawing.Point(6, 102);
             this.AddLast.Name = "AddLast";
             this.AddLast.Size = new System.Drawing.Size(90, 39);
             this.AddLast.TabIndex = 3;
@@ -85,7 +90,7 @@
             // 
             // RemoveFirst
             // 
-            this.RemoveFirst.Location = new System.Drawing.Point(378, 196);
+            this.RemoveFirst.Location = new System.Drawing.Point(102, 57);
             this.RemoveFirst.Name = "RemoveFirst";
             this.RemoveFirst.Size = new System.Drawing.Size(90, 39);
             this.RemoveFirst.TabIndex = 4;
@@ -95,7 +100,7 @@
             // 
             // RemoveLast
             // 
-            this.RemoveLast.Location = new System.Drawing.Point(474, 196);
+            this.RemoveLast.Location = new System.Drawing.Point(102, 102);
             this.RemoveLast.Name = "RemoveLast";
             this.RemoveLast.Size = new System.Drawing.Size(90, 39);
             this.RemoveLast.TabIndex = 5;
@@ -105,17 +110,17 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(600, 161);
+            this.textBox3.Location = new System.Drawing.Point(214, 57);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(82, 20);
             this.textBox3.TabIndex = 6;
             this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // Get
             // 
-            this.Get.Location = new System.Drawing.Point(600, 209);
+            this.Get.Location = new System.Drawing.Point(224, 83);
             this.Get.Name = "Get";
-            this.Get.Size = new System.Drawing.Size(100, 58);
+            this.Get.Size = new System.Drawing.Size(59, 31);
             this.Get.TabIndex = 7;
             this.Get.Text = "Get";
             this.Get.UseVisualStyleBackColor = true;
@@ -123,22 +128,22 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(600, 303);
+            this.textBox4.Location = new System.Drawing.Point(214, 120);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.Size = new System.Drawing.Size(82, 20);
             this.textBox4.TabIndex = 8;
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(39, 112);
+            this.treeView1.Location = new System.Drawing.Point(19, 19);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(199, 201);
+            this.treeView1.Size = new System.Drawing.Size(416, 359);
             this.treeView1.TabIndex = 9;
             // 
             // ShowTree
             // 
-            this.ShowTree.Location = new System.Drawing.Point(39, 366);
+            this.ShowTree.Location = new System.Drawing.Point(110, 423);
             this.ShowTree.Name = "ShowTree";
             this.ShowTree.Size = new System.Drawing.Size(100, 53);
             this.ShowTree.TabIndex = 10;
@@ -148,15 +153,15 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(84, 340);
+            this.textBox5.Location = new System.Drawing.Point(159, 397);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.Size = new System.Drawing.Size(113, 20);
             this.textBox5.TabIndex = 11;
             this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
             // RemoveFromTree
             // 
-            this.RemoveFromTree.Location = new System.Drawing.Point(145, 366);
+            this.RemoveFromTree.Location = new System.Drawing.Point(216, 423);
             this.RemoveFromTree.Name = "RemoveFromTree";
             this.RemoveFromTree.Size = new System.Drawing.Size(100, 53);
             this.RemoveFromTree.TabIndex = 12;
@@ -166,9 +171,9 @@
             // 
             // PreOrder
             // 
-            this.PreOrder.Location = new System.Drawing.Point(260, 139);
+            this.PreOrder.Location = new System.Drawing.Point(441, 78);
             this.PreOrder.Name = "PreOrder";
-            this.PreOrder.Size = new System.Drawing.Size(75, 50);
+            this.PreOrder.Size = new System.Drawing.Size(110, 87);
             this.PreOrder.TabIndex = 13;
             this.PreOrder.Text = "PreOrder";
             this.PreOrder.UseVisualStyleBackColor = true;
@@ -176,9 +181,9 @@
             // 
             // InOrder
             // 
-            this.InOrder.Location = new System.Drawing.Point(260, 195);
+            this.InOrder.Location = new System.Drawing.Point(441, 171);
             this.InOrder.Name = "InOrder";
-            this.InOrder.Size = new System.Drawing.Size(75, 50);
+            this.InOrder.Size = new System.Drawing.Size(110, 87);
             this.InOrder.TabIndex = 14;
             this.InOrder.Text = "InOrder";
             this.InOrder.UseVisualStyleBackColor = true;
@@ -186,37 +191,74 @@
             // 
             // PostOrder
             // 
-            this.PostOrder.Location = new System.Drawing.Point(260, 251);
+            this.PostOrder.Location = new System.Drawing.Point(441, 264);
             this.PostOrder.Name = "PostOrder";
-            this.PostOrder.Size = new System.Drawing.Size(75, 50);
+            this.PostOrder.Size = new System.Drawing.Size(110, 87);
             this.PostOrder.TabIndex = 15;
             this.PostOrder.Text = "PostOrder";
             this.PostOrder.UseVisualStyleBackColor = true;
             this.PostOrder.Click += new System.EventHandler(this.PostOrder_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.treeView1);
+            this.groupBox1.Controls.Add(this.PostOrder);
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.InOrder);
+            this.groupBox1.Controls.Add(this.ShowTree);
+            this.groupBox1.Controls.Add(this.PreOrder);
+            this.groupBox1.Controls.Add(this.RemoveFromTree);
+            this.groupBox1.Location = new System.Drawing.Point(39, 80);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(584, 486);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Tree";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.ShowList);
+            this.groupBox2.Controls.Add(this.AddFirst);
+            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.RemoveFirst);
+            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.Get);
+            this.groupBox2.Controls.Add(this.AddLast);
+            this.groupBox2.Controls.Add(this.RemoveLast);
+            this.groupBox2.Location = new System.Drawing.Point(623, 80);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(416, 174);
+            this.groupBox2.TabIndex = 17;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "List";
+            // 
+            // ShowList
+            // 
+            this.ShowList.Location = new System.Drawing.Point(312, 57);
+            this.ShowList.Name = "ShowList";
+            this.ShowList.Size = new System.Drawing.Size(75, 57);
+            this.ShowList.TabIndex = 9;
+            this.ShowList.Text = "ShowList";
+            this.ShowList.UseVisualStyleBackColor = true;
+            this.ShowList.Click += new System.EventHandler(this.ShowList_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.PostOrder);
-            this.Controls.Add(this.InOrder);
-            this.Controls.Add(this.PreOrder);
-            this.Controls.Add(this.RemoveFromTree);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.ShowTree);
-            this.Controls.Add(this.treeView1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.Get);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.RemoveLast);
-            this.Controls.Add(this.RemoveFirst);
-            this.Controls.Add(this.AddLast);
-            this.Controls.Add(this.AddFirst);
-            this.Controls.Add(this.textBox2);
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1051, 632);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Listy i drzewa";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,6 +282,9 @@
         private System.Windows.Forms.Button PreOrder;
         private System.Windows.Forms.Button InOrder;
         private System.Windows.Forms.Button PostOrder;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button ShowList;
     }
 }
 

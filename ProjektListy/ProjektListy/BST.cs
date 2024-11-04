@@ -94,7 +94,6 @@ namespace ProjektListy
                 PopulateTreeNode(rightNode, node.prawe);
             }
         }
-        // 8 3 1 4 3 2 9
         void CPD(NodeT wezel)
         {
             if (wezel == null) return;
@@ -125,6 +124,7 @@ namespace ProjektListy
         }
         private void RemoveZero(NodeT usuwany)
         {
+            if (usuwany == null) return;
             if (usuwany == root)
                 root = null;
             else if (usuwany.data < usuwany.rodzic.data)
@@ -174,11 +174,7 @@ namespace ProjektListy
                 {
                     RemoveZero(usuwany);
                 }
-                else if (usuwany.lewe != null && usuwany.prawe == null)
-                {
-                    RemoveOne(usuwany);
-                }
-                else if (usuwany.lewe == null && usuwany.prawe != null)
+                else if ((usuwany.lewe != null && usuwany.prawe == null) || (usuwany.lewe == null && usuwany.prawe != null))
                 {
                     RemoveOne(usuwany);
                 }

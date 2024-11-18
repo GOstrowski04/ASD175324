@@ -47,6 +47,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.ShowList = new System.Windows.Forms.Button();
+            this.ChodzenieGraf = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -243,6 +244,16 @@
             this.ShowList.UseVisualStyleBackColor = true;
             this.ShowList.Click += new System.EventHandler(this.ShowList_Click);
             // 
+            // ChodzenieGraf
+            // 
+            this.ChodzenieGraf.Location = new System.Drawing.Point(739, 344);
+            this.ChodzenieGraf.Name = "ChodzenieGraf";
+            this.ChodzenieGraf.Size = new System.Drawing.Size(75, 23);
+            this.ChodzenieGraf.TabIndex = 18;
+            this.ChodzenieGraf.Text = "button1";
+            this.ChodzenieGraf.UseVisualStyleBackColor = true;
+            this.ChodzenieGraf.Click += new System.EventHandler(this.ChodzenieGraf_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -250,6 +261,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1051, 632);
+            this.Controls.Add(this.ChodzenieGraf);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBox1);
@@ -285,6 +297,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button ShowList;
+        private System.Windows.Forms.Button ChodzenieGraf;
     }
 }
 

@@ -15,9 +15,26 @@ namespace ProjektListy
         public Form1()
         {
             InitializeComponent();
+            A.neighbors.AddRange(new List<NodeG> {B, C});
+            B.neighbors.AddRange(new List<NodeG> {A, D, E});
+            C.neighbors.AddRange(new List<NodeG> {A, D, F});
+            D.neighbors.AddRange(new List<NodeG> {B, C, F});
+            E.neighbors.AddRange(new List<NodeG> {B, F});
+            F.neighbors.AddRange(new List<NodeG> {C, D, E, G});
+            G.neighbors.AddRange(new List<NodeG> {F});
+            g1.nodes.AddRange(new List<NodeG> {A, B, C, D, E, F, G});
+
         }
         List lista = new List();
         BST bst = new BST();
+        NodeG A = new NodeG(1);
+        NodeG B = new NodeG(2);
+        NodeG C = new NodeG(7);
+        NodeG D = new NodeG(3);
+        NodeG E = new NodeG(6);
+        NodeG F = new NodeG(4);
+        NodeG G = new NodeG(5);
+        Graf g1 = new Graf();
         private void AddFirst_Click(object sender, EventArgs e)
         {
             lista.AddFirst(int.Parse(textBox2.Text));
@@ -119,6 +136,17 @@ namespace ProjektListy
         private void ShowList_Click(object sender, EventArgs e)
         {
             textBox1.Text = lista.ToString();
+        }
+
+        private void ChodzenieGraf_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            List<NodeG> test = g1.chodzenieWszerz(g1.nodes[0]);
+            for (int i = 0; i < test.Count; i++)
+            {
+                textBox1.Text += test[i].ToString();
+                textBox1.Text += ' ';
+            }
         }
     }
 }

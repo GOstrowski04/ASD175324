@@ -36,5 +36,31 @@ namespace ProjektListy
             }
             return temp;
         }
+        public List<NodeG> chodzenieWGlab(NodeG start)
+        {
+            List<NodeG> visited = new List<NodeG>();
+            Stack<NodeG> stack = new Stack<NodeG>();
+
+            stack.Push(start);
+
+            while (stack.Count > 0)
+            {
+                NodeG current = stack.Pop();
+
+                if (!checkIfIn(visited, current))
+                {
+                    visited.Add(current);
+                    for (int i = current.neighbors.Count - 1; i >= 0; i--)
+                    {
+                        NodeG neighbor = current.neighbors[i];
+                        if (!checkIfIn(visited, neighbor))
+                        {
+                            stack.Push(neighbor);
+                        }
+                    }
+                }
+            }
+            return visited;
+        }
     }
 }

@@ -48,6 +48,9 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.ShowList = new System.Windows.Forms.Button();
             this.ChodzenieGraf = new System.Windows.Forms.Button();
+            this.CzestoscText = new System.Windows.Forms.TextBox();
+            this.StworzDictionary = new System.Windows.Forms.Button();
+            this.KodowanieHuffmana = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -246,13 +249,40 @@
             // 
             // ChodzenieGraf
             // 
-            this.ChodzenieGraf.Location = new System.Drawing.Point(739, 344);
+            this.ChodzenieGraf.Location = new System.Drawing.Point(740, 283);
             this.ChodzenieGraf.Name = "ChodzenieGraf";
             this.ChodzenieGraf.Size = new System.Drawing.Size(75, 23);
             this.ChodzenieGraf.TabIndex = 18;
             this.ChodzenieGraf.Text = "button1";
             this.ChodzenieGraf.UseVisualStyleBackColor = true;
             this.ChodzenieGraf.Click += new System.EventHandler(this.ChodzenieGraf_Click);
+            // 
+            // CzestoscText
+            // 
+            this.CzestoscText.Location = new System.Drawing.Point(782, 397);
+            this.CzestoscText.Name = "CzestoscText";
+            this.CzestoscText.Size = new System.Drawing.Size(147, 20);
+            this.CzestoscText.TabIndex = 19;
+            // 
+            // StworzDictionary
+            // 
+            this.StworzDictionary.Location = new System.Drawing.Point(804, 423);
+            this.StworzDictionary.Name = "StworzDictionary";
+            this.StworzDictionary.Size = new System.Drawing.Size(102, 23);
+            this.StworzDictionary.TabIndex = 20;
+            this.StworzDictionary.Text = "CreateDictionary";
+            this.StworzDictionary.UseVisualStyleBackColor = true;
+            this.StworzDictionary.Click += new System.EventHandler(this.StworzDictionary_Click);
+            // 
+            // KodowanieHuffmana
+            // 
+            this.KodowanieHuffmana.Location = new System.Drawing.Point(697, 460);
+            this.KodowanieHuffmana.Name = "KodowanieHuffmana";
+            this.KodowanieHuffmana.Size = new System.Drawing.Size(118, 23);
+            this.KodowanieHuffmana.TabIndex = 21;
+            this.KodowanieHuffmana.Text = "KodowanieHuffmana";
+            this.KodowanieHuffmana.UseVisualStyleBackColor = true;
+            this.KodowanieHuffmana.Click += new System.EventHandler(this.KodowanieHuffmana_Click);
             // 
             // Form1
             // 
@@ -261,6 +291,9 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1051, 632);
+            this.Controls.Add(this.KodowanieHuffmana);
+            this.Controls.Add(this.StworzDictionary);
+            this.Controls.Add(this.CzestoscText);
             this.Controls.Add(this.ChodzenieGraf);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -298,6 +331,9 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button ShowList;
         private System.Windows.Forms.Button ChodzenieGraf;
+        private System.Windows.Forms.TextBox CzestoscText;
+        private System.Windows.Forms.Button StworzDictionary;
+        private System.Windows.Forms.Button KodowanieHuffmana;
     }
 }
 

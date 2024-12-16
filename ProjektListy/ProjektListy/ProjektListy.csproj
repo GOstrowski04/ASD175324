@@ -60,6 +60,7 @@
     <Compile Include="Node.cs" />
     <Compile Include="NodeG.cs" />
     <Compile Include="NodeG1.cs" />
+    <Compile Include="NodeGS.cs" />
     <Compile Include="NodeT.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -35,6 +35,7 @@ namespace ProjektListy
         NodeG F = new NodeG(4);
         NodeG G = new NodeG(5);
         Graf g1 = new Graf();
+        List<NodeT> listT = new List<NodeT>();
         private void AddFirst_Click(object sender, EventArgs e)
         {
             lista.AddFirst(int.Parse(textBox2.Text));
@@ -146,6 +147,40 @@ namespace ProjektListy
             {
                 textBox1.Text += test[i].ToString();
                 textBox1.Text += ' ';
+            }
+        }
+        private void sortListT()
+        {
+            listT = listT.OrderBy(node => node.data).ThenBy(node => node.GetType() == typeof(NodeT) ? 0 : 1).ToList();
+        }
+        private void StworzDictionary_Click(object sender, EventArgs e)
+        {
+            listT.Clear();
+            Dictionary<char, int> tempD = new Dictionary<char, int>();
+            string temp = CzestoscText.Text;
+            int i = -1;
+            foreach (char c in temp)
+            {
+                if (tempD.ContainsKey(c) == false)
+                {
+                    tempD[c] = 0;
+                    listT.Add(new NodeGS(0, c));
+                }
+                tempD[c] += 1;
+            }
+            foreach(var c in tempD)
+            {
+                listT.Add(new NodeGS(c.Value, c.Key));
+            }
+            sortListT();
+        }
+
+        private void KodowanieHuffmana_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < listT.Count-1; i+=2)
+            {
+                int tempNewG = listT[i].data + listT[i + 1].data;
+                listT.Add(new NodeT(tempNewG, listT[i], listT[i + 1]));
             }
         }
     }

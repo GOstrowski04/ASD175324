@@ -16,6 +16,12 @@ namespace ProjektListy
         {
             this.data = liczba;
         }
+        public NodeT(int liczba, NodeT lewe, NodeT prawe)
+        {
+            this.lewe = lewe;
+            this.prawe = prawe;
+            this.data = liczba;
+        }
         void Connect(NodeT dziecko)
         {
             rodzic = this;
